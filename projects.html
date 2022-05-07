@@ -361,42 +361,40 @@ table td {
 
     <h2>Projects</h2>
 
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
-        <td width="25%">
-          <div class="one">
-            <div class="two" id = 'jump_image'><img src='resm3dvton.png'></div>
-            <img src='resm3dvton.png'>
-          </div>
-          <script type="text/javascript">
-            function jump_start() {
-              document.getElementById('jump_image').style.opacity = "1";
-            }
-            function jump_stop() {
-              document.getElementById('jump_image').style.opacity = "0";
-            }
-            jump_stop()
-          </script>
+    <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+    <td width="25%">
+        <div class="one">
+        <div class="two" id = 'jump_image'><img src='resm3dvton.png'></div>
+        <img src='resm3dvton.png'>
+        </div>
+        <script type="text/javascript">
+        function jump_start() {
+            document.getElementById('jump_image').style.opacity = "1";
+        }
+        function jump_stop() {
+            document.getElementById('jump_image').style.opacity = "0";
+        }
+        jump_stop()
+        </script>
+    </td>
+    <td valign="top" width="75%">
+        <p><a href="https://hasibzunair.github.io/resm3dvton/resources/paper.pdf">
+        <papertitle>Monocular-to-3D Virtual Try-On using Deep Residual U-Net</papertitle></a><br>
+        Authors : <strong>Hasib Zunair</strong><br> 
+        <em>COMP 6381 Digital Geometric Modelling</em>, Fall 2021<br>
+        </p>
+        <a href="https://hasibzunair.github.io/resm3dvton/">Project Page</a> / 
+        <a href="https://github.com/hasibzunair/res-m3d-vton">Code</a> 
+        <p>
+        Res-M3D-VTON is a pipeline for monocular to 3D virtual try-on (VTON) 
+        for fashion clothing which uses residual learning to synthesize correct clothing parts, 
+        preserve logo of clothing and reduce artifacts to finally output better textured 
+        3D try-on meshes.
+        </p>
+        <p></p>
+        </a></p>
         </td>
-        <td valign="top" width="75%">
-          <p><a href="https://hasibzunair.github.io/resm3dvton/resources/paper.pdf">
-          <papertitle>Monocular-to-3D Virtual Try-On using Deep Residual U-Net</papertitle></a><br>
-          Authors : <strong>Hasib Zunair</strong><br> 
-          <em>COMP 6381 Digital Geometric Modelling</em>, Fall 2021<br>
-          </p>
-          <a href="https://hasibzunair.github.io/resm3dvton/">Project Page</a> / 
-          <a href="https://github.com/hasibzunair/res-m3d-vton">Code</a> 
-          <p>
-            Res-M3D-VTON is a pipeline for monocular to 3D virtual try-on (VTON) 
-            for fashion clothing which uses residual learning to synthesize correct clothing parts, 
-            preserve logo of clothing and reduce artifacts to finally output better textured 
-            3D try-on meshes.
-          </p>
-            <p></p>
-            </a></p>
-          </td>
-        </tr>
-      </table>
+    </tr>
 
 </body>
 </html>
