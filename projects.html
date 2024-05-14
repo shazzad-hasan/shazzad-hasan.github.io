@@ -360,6 +360,63 @@ table td {
 </div>
 
     <h2>Projects</h2>
+
+    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+      <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+      <td width="25%">
+        <div class='col-xs-3 text-center'>
+          <img class='paper-image' src='images/roofline_model.png'>
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+            <papertitle>Performance Analysis and Efficient CUDA Implementation of Matrix Arithmetic</papertitle><br>
+        <p>In this project, I initially
+          utilized gprof to analyze and visualize execution times of serial code functions, identifying hotspot functions. Further
+          performance insights were gained using the likwid tool to profile memory and floating point operations of the hotspot functions,
+          accompanied by a roofline model visualization. Subsequently, I implemented CUDA to harness loop parallelism within compute
+          functions. This was extended to task parallelism, enabling simultaneous execution of independent compute functions.
+        </p>
+      </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+      <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+      <td width="25%">
+        <div class='col-xs-3 text-center'>
+          <img class='paper-image' src='images/weak_scaling.png'>
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+            <papertitle>Parallelization and Scaling Analysis of 2D Reaction-diffusion System</papertitle><br>
+        <p>In this project, I simulated serial and
+          parallelized versions of a variant of FitzHugh-Nagumo model namely, the 2D reaction-diffusion system using OpenMP and
+          MPI. My goal was to compare the performance of the serial code against the parallelized version and investigate weak and
+          strong scaling of the parallel implementations.
+        </p>
+      </td>
+      </tr>
+      </tbody>
+    </table>
     
     <table width="100%" align="center" border="0" cellpadding="20"><tbody>
       <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
@@ -382,9 +439,9 @@ table td {
             Contributors: <strong>Shazzad Hasan</strong>, Tanzim Hossain<br>
             <a href="https://github.com/shazzad-hasan/EEE-CSE499"><em>Code</em></a>
             <br>
-        <p>In this project, we developed a model for patients
-          who are suffering pulmonary fibrosis disease. We developed the model using CT scan images of the lungs of different patients,
-          their clinical metadata, and baseline FVC values as inputs. We determine prognosis of the disease based on the predicted FVC value.
+        <p>In this project, we developed a model for patients suffering from pulmonary fibrosis disease using CT scan 
+           images of their lungs, clinical metadata, and baseline FVC values. We
+          determine the prognosis of the disease based on the model's predicted FVC value. [Methods: CNN, Linear Regression]
         </p>
       </td>
     </tr>
@@ -395,7 +452,7 @@ table td {
     <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
     <td width="25%">
       <div class='col-xs-3 text-center'>
-        <img class='paper-image' src='images/job_cluster.PNG'>
+        <img class='paper-image' src='images/job_clusters.png'>
       </div>
       <script type="text/javascript">
       function aperture_start() {
@@ -409,18 +466,72 @@ table td {
     </td>
     <td valign="top" width="75%">
           <papertitle>A Machine Learning Approach for Future Career Planning in IT in Bangladesh.</papertitle><br>
-          Contributors: <strong>Shazzad Hasan</strong><br>
-          <a href="https://github.com/shazzad-hasan/CSE465"><em>Code</em></a>
-          <br>
+          
       <p>Determining whether a job is
-        suitable for a person looking for a job based on their specialization, skills, background, and job descriptions is difficult. In this
-        project, we collected job-circular data in Information Technology in Bangladesh. We developed a model to help job seekers to
-        comprehend and get their most desired job.
+        suitable for a person seeking employment based on their specialization, skills, background, and job descriptions can be
+        challenging. In this project, I collected job-circular data in Information Technology in Bangladesh and developed a model to
+        assist job seekers in comprehending and securing their most desired jobs. [Methods: k-means clustering, PCA]
       </p>
     </td>
   </tr>
   </tbody>
 </table>
+
+<table width="100%" align="center" border="0" cellpadding="20"><tbody>
+  <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+  <td width="25%">
+    <div class='col-xs-3 text-center'>
+      <img class='paper-image' src='images/reaction_diffusion_system.png'>
+    </div>
+    <script type="text/javascript">
+    function aperture_start() {
+    document.getElementById('aperture_image').style.opacity = "1";
+    }
+    function aperture_stop() {
+    document.getElementById('aperture_image').style.opacity = "0";
+    }
+    aperture_stop()
+    </script>
+  </td>
+  <td valign="top" width="75%">
+        <papertitle>Gray-Scott Reaction-diffusion System Simulation Software</papertitle><br>
+    <p>In this project, our goal was to build agile, responsible,
+      and collaborative software. We created a build system for the Gray-Scott reaction-diffusion system and implemented
+      continuous integration for our git repository. Additionally, we used GoogleTest framework for unit testing.
+    </p>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<table width="100%" align="center" border="0" cellpadding="20"><tbody>
+  <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+  <td width="25%">
+    <div class='col-xs-3 text-center'>
+      <img class='paper-image' src='images/pm.png'>
+    </div>
+    <script type="text/javascript">
+    function aperture_start() {
+    document.getElementById('aperture_image').style.opacity = "1";
+    }
+    function aperture_stop() {
+    document.getElementById('aperture_image').style.opacity = "0";
+    }
+    aperture_stop()
+    </script>
+  </td>
+  <td valign="top" width="75%">
+        <papertitle>Software Project Management</papertitle><br>
+    <p>In this project, we developed a project management plan by creating a Gantt Chart for
+      the software development of a client company. The tasks carried out during the project’s lifecycle included hiring a data
+      scientist, defining project requirements, reviewing the data provided by the company, selecting the best methods based on the
+      state-of-the-art review, code development, and addressing safety issues.
+    </p>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
 
 </body>
 </html>
