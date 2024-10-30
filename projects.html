@@ -384,11 +384,10 @@ table td {
       </td>
       <td valign="top" width="75%">
         <papertitle><strong>Performance Analysis and Efficient CUDA Implementation of Matrix Arithmetic</strong></papertitle><br>
-        <p>In this project, I initially
-          utilized gprof to analyze and visualize execution times of serial code functions, identifying hotspot functions. Further
-          performance insights were gained using the likwid tool to profile memory and floating point operations of the hotspot functions,
-          accompanied by a roofline model visualization. Subsequently, I implemented CUDA to harness loop parallelism within compute
-          functions. This was extended to task parallelism, enabling simultaneous execution of independent compute functions.
+        <p>
+          <li>Used <code>gprof</code> to analyze and visualize execution time of serial code and identify hotspot functions.</li>
+          <li>Used <code>likwid</code> to profile memory and floating-point operations of the hotspot functions and plotted a roofline model.</li>
+          <li>Used CUDA to implement loop parallelism within compute functions and extended this to task parallelism.</li>
         </p>
       </td>
       </tr>
