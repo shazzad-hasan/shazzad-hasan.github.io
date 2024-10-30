@@ -366,63 +366,6 @@ table td {
 
     <h2>Projects</h2>
 
-    <h4>High-Performance Computing</h4>
-
-    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-      <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
-      <td width="25%">
-        <div class='col-xs-3 text-center'>
-          <img class='paper-image' src='images/roofline_model.png'>
-        </div>
-        <script type="text/javascript">
-        function aperture_start() {
-        document.getElementById('aperture_image').style.opacity = "1";
-        }
-        function aperture_stop() {
-        document.getElementById('aperture_image').style.opacity = "0";
-        }
-        aperture_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <papertitle><strong>Performance Analysis and Efficient CUDA Implementation of Matrix Arithmetic</strong></papertitle><br>
-        <p>
-          <li>Used gprof to analyze and visualize execution time of serial code and identify hotspot functions.</li>
-          <li>Used likwid to profile memory and floating-point operations of the hotspot functions and plotted a roofline model.</li>
-          <li>Used CUDA to implement loop parallelism within compute functions and extended this to task parallelism.</li>
-        </p>
-      </td>
-      </tr>
-      </tbody>
-    </table>
-
-    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-      <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
-      <td width="25%">
-        <div class='col-xs-3 text-center'>
-          <img class='paper-image' src='images/weak_scaling.png'>
-        </div>
-        <script type="text/javascript">
-        function aperture_start() {
-        document.getElementById('aperture_image').style.opacity = "1";
-        }
-        function aperture_stop() {
-        document.getElementById('aperture_image').style.opacity = "0";
-        }
-        aperture_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-            <papertitle><strong>Parallelization and Scaling Analysis of 2D Reaction-diffusion System</strong></papertitle><br>
-        <p>
-          <li>Implemented parallel code of the serial implementation of a variant of FitzHugh-Nagumo model namely, the 2D reaction-diffusion system using OpenMP and MPI</li>
-          <li>Compared the performance of the serial code against the parallelized version and investigated weak and strong scaling</li>
-        </p>
-      </td>
-      </tr>
-      </tbody>
-    </table>
-
     <h4>Machine Learning</h4>
     
     <table width="100%" align="center" border="0" cellpadding="20"><tbody>
@@ -481,6 +424,63 @@ table td {
   </tbody>
 </table>
 
+    <h4>High-Performance Computing</h4>
+
+    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+      <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+      <td width="25%">
+        <div class='col-xs-3 text-center'>
+          <img class='paper-image' src='images/roofline_model.png'>
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <papertitle><strong>Performance Analysis and Efficient CUDA Implementation of Matrix Arithmetic</strong></papertitle><br>
+        <p>
+          <li>Used gprof to analyze and visualize execution time of serial code and identify hotspot functions.</li>
+          <li>Used likwid to profile memory and floating-point operations of the hotspot functions and plotted a roofline model.</li>
+          <li>Used CUDA to implement loop parallelism within compute functions and extended this to task parallelism.</li>
+        </p>
+      </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+      <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+      <td width="25%">
+        <div class='col-xs-3 text-center'>
+          <img class='paper-image' src='images/weak_scaling.png'>
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+            <papertitle><strong>Parallelization and Scaling Analysis of 2D Reaction-diffusion System</strong></papertitle><br>
+        <p>
+          <li>Implemented parallel code of the serial implementation of a variant of FitzHugh-Nagumo model namely, the 2D reaction-diffusion system using OpenMP and MPI</li>
+          <li>Compared the performance of the serial code against the parallelized version and investigated weak and strong scaling</li>
+        </p>
+      </td>
+      </tr>
+      </tbody>
+    </table>
+
 <h4>Software Development</h4>
 
 <table width="100%" align="center" border="0" cellpadding="20"><tbody>
@@ -504,6 +504,34 @@ table td {
     <p>
       <li>Worked in a team to build an agile, responsible, and collaborative software</li>
       <li>Used GoogleTest framework for unit testing, created a build system, and implemented continuous integration</li>
+    </p>
+  </td>
+  </tr>
+  </tbody>
+</table>
+
+<h4>Mathematical Modeling and Simulation</h4>
+
+<table width="100%" align="center" border="0" cellpadding="20"><tbody>
+  <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" ></tr>
+  <td width="25%">
+    <div class='col-xs-3 text-center'>
+      <img class='paper-image' src='images/reaction_diffusion_system.png'>
+    </div>
+    <script type="text/javascript">
+    function aperture_start() {
+    document.getElementById('aperture_image').style.opacity = "1";
+    }
+    function aperture_stop() {
+    document.getElementById('aperture_image').style.opacity = "0";
+    }
+    aperture_stop()
+    </script>
+  </td>
+  <td valign="top" width="75%">
+        <papertitle><strong>Percolation Simulation</strong></papertitle><br>
+    <p>
+      <li>Simulated Eden and DLA cluster growth models and examined percolation on a 2D lattice</li>
     </p>
   </td>
   </tr>
